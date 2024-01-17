@@ -8,7 +8,6 @@ export function UseLocalStorage({setTareas,tareas}) {
       const tareasLocal = localStorage.getItem("tareas");
       if (tareasLocal) {
         setTareas(JSON.parse(tareasLocal));
-        console.log(tareasLocal)
       }
     } catch (error) {
       console.error("Error al analizar datos del localStorage:", error);
